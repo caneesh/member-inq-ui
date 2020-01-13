@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+<!--    <div class="col-lg-7 mx-auto bg-white rounded shadow">-->
+    <div >
+      <div class="table-responsive">
+<table class="table table-sm">
+  <thead class="thead-light">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Last Name</th>
+    <th scope="col">First Name</th>
+    <th scope="col">Gender</th>
+    <th scope="col">Date Of Birth</th>
+    <th scope="col">Rel Code</th>
+    <th scope="col">Group Number</th>
+    <th scope="col">Section Number</th>
+    <th scope="col">Subscriber Number</th>
+    <th scope="col">Prefix</th>
+    <th scope="col">Benefit Agreement Effective Date</th>
+    <th scope="col">Benefit Agreement End Date</th>
+    <th scope="col">Key Change</th>
+    <th scope="col">Address</th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let data of searchResult">
+  <tr >
+    <th scope="row">
+      <label>
+        <input type="radio" value="{{data.id}}">
+      </label>
+    </th>
+    <td>{{data.lastName}}</td>
+    <td>{{data.firstName}}</td>
+    <td>{{data.gender}}</td>
+    <td>{{data.dob}}</td>
+    <td>{{data.relCode}}</td>
+    <td>{{data.groupNumber}}</td>
+    <td>{{data.sectionNumber}}</td>
+    <td>{{data.subscriberNumber}}</td>
+    <td>{{data.prefix}}</td>
+    <td>{{data.effectiveDate}}</td>
+    <td>{{data.endDate}}</td>
+    <td>{{data.keyChange}}</td>
+    <td>{{data.address}}</td>
+
+  </tr>
+  </ng-container>
+  </tbody>
+</table>
+</div>
+  </div>
+</div>
